@@ -1,0 +1,1 @@
+powershell.exe Set-ExecutionPolicy bypass -Scope CurrentUser -Force -ErrorAction SilentlyContinue
