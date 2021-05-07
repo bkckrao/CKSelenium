@@ -17,11 +17,11 @@ Maven has the feasibility of passing arguments from command line when running th
 				<version>3.0.0-M5</version>
 				<configuration>
 				 	
-				 	<systemPropertyVariables>
-            <username></username>
-    				<password></password>
-    				<domain></domain>
-          </systemPropertyVariables>
+	<systemPropertyVariables>
+            	<username></username>
+    		<password></password>
+    		<domain></domain>
+        </systemPropertyVariables>
 					
 					<useSystemClassLoader>false</useSystemClassLoader>
 					<argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
@@ -35,11 +35,18 @@ Maven has the feasibility of passing arguments from command line when running th
 3. Next step is to retrieve these values in the script by using system.getproperty. Please find the sample code below.
 
 ```
-    System.out.println("username :" + System.getProperty("username"));
+    		System.out.println("username :" + System.getProperty("username"));
 		System.out.println("Password : " + System.getProperty("password"));
 		System.out.println("Domain : " + System.getProperty("domain"));
 ```
 4. Last step is running with the maven command as below:
 ```
-mvn clean test -Dusername='bkckrao' -Dpassword=passwordvalue -Ddomain=diyardomain
+mvn clean test -Dusername='bkckrao' -Dpassword=passwordvalue -Ddomain=ckdomain
+```
+5. Find the output below:
+
+```
+username :bkckrao
+Password : passwordvalue
+Domain : ckdomain
 ```
