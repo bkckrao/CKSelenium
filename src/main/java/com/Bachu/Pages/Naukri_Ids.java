@@ -1,10 +1,17 @@
 package com.Bachu.Pages;
 
+import com.CK.Selenium.Framework.Lib.*;
+import com.CK.Selenium.Framework.Lib.SimpleLib.Type;
+
+/*
 import com.Bachu.Selenium.Framework.Lib.Button;
-import com.Bachu.Selenium.Framework.Lib.Label;
-import com.Bachu.Selenium.Framework.Lib.Link;
-import com.Bachu.Selenium.Framework.Lib.Textfield;
-import com.Bachu.Selenium.Framework.Lib.SimpleLib.Type;
+import com.CK.Selenium.Framework.Lib.Label;
+import com.CK.Selenium.Framework.Lib.Link;
+import com.CK.Selenium.Framework.Lib.Textfield;
+import com.CK.Selenium.Framework.Lib.SimpleLib.Type;
+*/
+
+
 
 public class Naukri_Ids {
 

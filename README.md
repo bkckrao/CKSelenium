@@ -1,58 +1,40 @@
-[Automation Framework](#Automation-Framework)
+# Automation_framework
+====================================================
 
-[DataDrivenFramework](#DataDrivenFramework)
+[Overview](#Overview)
 
-[CKSelenium - Framework Introduction](#CKSelenium\--\-Automation-Framework)
+[PageObjects](#Page-Objects)
 
-[How to use this framework:](#How-to-use-this-framework:)
+[How to write page Objects](#How-to-write-page-Objects)
 
--	[How to write page Objects](How-to-write-page-Objects)
+[How to maintain Testdata](#How-to-maintain-Testdata)
 
-	-	[Sample Page Object Class](#Sample-Page-Object-Class)
+[How to write Reporting](#How-to-write-Reporting)
 
-	-	[Standards on Script writing](#Standards-on-Script-writing)
+[How to write scripts](#How-to-write-scripts)
 
--	[How to get the data from Excel:](#How-to-get-the-data-from-Excel:)
+[Tools Installation by Script](#Tools-Installation-by-Script)
 
-	-	[Sample script of getting data from excel](#sample-script-of-getting-data-from-excel)
+[Get start with this framework](/Installs/docs/More_On_ckFramework.md)
 
-[Reporting](#Reporting)
+[Autoit](/Installs/docs/Autoit.md)
 
--	[How to write Reporting](#How-to-write-Reporting)
+**Overview:**
 
-	-	[Sample Report](#Sample-Report)
+Automation Framework is a set of guidelines	and rules used for scripting and controlling the execution of tests  comparison of actual outcomes and expected outcomes. It integrates testdata, object handling and library functions.
 
-[Installation and Setup](/Installs/docs/Installation_and_Setup.md)
-
-[Detailed Instructions](/Installs/docs/Get_MoreDetails_On_ckFramework.md)
-## Automation Framework
-Automation Framework is a set of guidelines	and rules for creating and designing test scripts. Framework executes the scripts by comparing actual outcome and expected outcome. It integrates testdata, object handling and library functions.
-
-
-## DataDrivenFramework 
-A data-driven approach is also possible, where the test framework supplies "inputs" and observes a series of corresponding "outputs."
-This is the widely used type of framework. It separates test data from the scripts by which maintenance is easier.
-
-# CKSelenium - Automation Framework
-## Introduction:
-*CKSelenium* is an Automation Framework based on Data Driven Approach used for web applications. This framework can be utilized by beginner, as we have provided the detailed process of documentation and examples for easy understanding. 
-
-*Every beginner will love to use **CKSelenium** framework.*
-
-CKSelenium is developed for selenium with Java. 
-
-Note the tools:
-
- -	Eclipse	-	IDE for scripting
- -	Selenium	- Open source Automation tool for web applications
- -	TestNG	-	Testing framework for Java programming language
- -	Maven	-	Maven is a tool that can be used for building and managing any Java-based project. Maven is a powerful project management tool that is based on POM (project object model). It is used for projects build, dependency and documentation. It simplifies the build process
- -	Excel Plugins to read the data from Excel
- -	Basic HTML to get the reports 
+**Prerequisite:**
+Automation engineer need to have basic knowledge on Java, Xpath.
 
 
 
-**Config.properties** - Global configurations that can be used across the project are placed in this file like Testdatapath, ProjectDirectory, Reportspath etc.
+**DataDrivenFramework:** This is the widely used type of framework. It separates test data from the scripts by which maintenance is easier.
+
+**PageObjectModel:** Each webpage in the application has a corresponding class that holds elements of that webpage. It is maintenance of objects in a class and naming them as corresponding Pages
+
+**Language :** In our Selenium Project we are using Java language. Even though Selenium supports multiple languages, we have chosen Java language just because most of the automation developers have knowledge on Java
+
+**Config.properties** - Global configurations that can be used across the project are placed in this file like Browser, TestdataFile, TimeOutPeriod etc.
 
 **BaseTest**
 - This class is responsible for reading the properties file, assigning the values to defined class variables
@@ -61,50 +43,31 @@ Note the tools:
 
 **Packages:** We are maintaining different packages for pages and scripts.
 For ex: 
-- com.Bachu.Selenium.Pages
-- com.Bachu.Selenium.Scripts
-
-# How to use this framework:
+- com.Diyar.ProjectName.pages
+- com.Diyar.ProjectName.Scripts
 
 
+
+
+
+# Page Objects
 ## How to write page Objects
 Page Object is a Design Pattern which has become popular in test automation for enhancing test maintenance and reducing code duplication. A page object is an object-oriented classes
 
-- Each webpage in the application should have a page object class in package **com.Bachu.Selenium.Pages**
-- create a class with reasonable name, For example Naukri_HomePage.java, Naukri_LoginPage.java
+- Each webpage in the application should have a page object class.
+- create a class with reasonable name, For example DSP_HomePage.java, DSP_LoginPage.java
 -  Xpath is the default option and not required to specify. so if the element is not Xpath, it should be declared like type.ID where Type is the Enum.
-- All elements should be declared static, Please see the Sample class below
-
-
-## Sample Page Object Class
-
+- All elements should be declared static, Sample below
 ```
-public class Naukri_Ids {
-
-	public static Link loginLink = new Link("//div[contains(text(),'Login')]");
-	public static Textfield usernametf = new Textfield("//input[@placeholder='Enter your active Email ID / Username']");
-	public static Textfield passwordtf = new Textfield("//input[@placeholder='Enter your password']");
-	public static Button loginButton = new Button("//button[@class='btn-primary loginButton']");
-	public static Link myNaukriLink = new Link("//div[contains(text(),'My Naukri')]"); 
-	public static Link editProfileLink = new Link("//a[contains(text(),'Edit Profile')]");
-	public static Link logoutLink = new Link("//a[@class='logout-gnb'][@title='Logout']");
-	public static Button updateResumeButton = new Button("#attachCV", Type.CSS);
-	public static Label successmsg = new Label("//span[@id='attachCVMsgBox']");	
-	public static Label uploadedon = new Label("//span[@class='updateOn']");
-	public static SelectBox abc = new SelectBox((WebElement) By.xpath("xpath"));
-
-}
+public static Textfield UserName = new Textfield("Username", Type.ID);
+public static Textfield Password = new Textfield("Password", Type.ID);
+public static Button LoginButton = new  Button("//button[@id = \"btnLogin\"]");
+public static Button PageinArabic = new Button("//span[@id='langChange']/i/span[contains(text(), 'English')]");
+public static Label Heading = new Label("//h3[contains(text(), 'DSP Document Signer')]");
+public static SelectBox pagesize = new SelectBox("//select[@id='sdrpPageSize']");
 ```
 
-Now we have elements of Username, Password, login button etc...
-
-Now to write the script on usertextfield, Just call the object usertextfield that follows the methods used for the Textfield which are overridden methods of Selenium Webdriver.
-
-Similarly same goes for Label, Link, Button etc. So you don't have to call the driver or mostly used webdriver commands are equipped with those elements.
-
-
-
-## Standards on Script writing
+# How to write scripts
 
 - Naming convention of script class : **modulename_TS_01_Functionality**
 - Every script should extend **FrameLib.java**
@@ -114,81 +77,93 @@ Similarly same goes for Label, Link, Button etc. So you don't have to call the d
 - Methods, variables should start with small Letter
 Reusable methods of Application can be created with naming **Modulename_Library** and make this as superclass for the script
 
-sample of writing scripts:
-
-	Naukri_Ids.loginLink.click();
-	Naukri_Ids.usernametf.setText("name@email.com", "user name text field");
-	Naukri_Ids.passwordtf.setText("Pass@123", "Password text field");
-	Naukri_Ids.loginButton.click("Login Button");
 
 
-## How to get the data from Excel:
 
-Each test script should have these values
+# How to maintain Testdata
+------------------------------------------------------
+test data is maintained in Excel sheets 
+Testdata file should be placed in the folder **Testdata**
+Testdata file name, sheet name should be declared in config.properties
 
-getdata(testdatafile,"Sheet1", getmethodname(new Object() {}), "Username"));
+Each script should have the following lines in initialize() to get the names of Testdata file and sheet name, See example below:
+- sTestdataFile = getproperty("testdatafile");
+- sTestdataSheet = getproperty("testdatasheet");
 
-parameter1 - testdatafile is the name of testdata file
-parameter2 - sheet1 is the name of the sheet with in the Excel workbook
-paramter3 - getmethodname(new Object() {}) is the text in the row that filters the value horizontally, here by using the getmethod we are considering the method name and the sma method name should be passed in the excelsheet.
-parameter4 - Username is the column heading in the testdata file that filters text
+sample test data creation:
+| TestScriptName                        | Username | Password   |
+|---------------------------------------|----------|------------|
+| dsp_TS01_Login_with_Valid_Credentials | DspUser1 | Gl0bl3@d$P |
+| dsp_TS02_Login_with_Invalid_UserName  | Invalid  | Gl0bl3@d$P |
+| dsp_TS03_Login_with_Invalid_Password  | DspUser1 | Invalid    |
+
+dsp_TS01_Login_with_Valid_Credentials - this is the test script name 
+Username - this is the field used to get the value 
+
+Excel workbook name should be written in Config.properties
+- testdatafile = DSP_Testdata.xlsx
 
 
-## sample script of getting data from excel
+**Each test script should have these values**
 
-```
-// getdata(sTestdataFile, sTestdataSheet, rowheading, columnHeading)
-usernamevalue = getdata(sTestdataFile, sTestdataSheet, getmethodname(new Object() {}), "username")
-passwordvalue = getdata(sTestdataFile, sTestdataSheet, getmethodname(new Object() {}), "password")
+getdata("Username");
 
-Naukri_Page_Ids.usertextfield.setText(usernamevalue, passwordvalue);
-```
-Naukri_Page_Ids - this is the class where elements are written
-usertextfield  -  element in the class for the Username field
-setText  -  Method in the Textfield class to write the data to username from hte excel.
-getdata  -  This is the method to get data base on the column name and row name which are passed as parameters for this method
-sTestdataFile - test data file name that can be retrieved from config.properties.
-Sheet1 - Name of the sheet, incase of having multiple sheets in the work book
-Username  -  this is the heading for the column
-Naukri_ProfileUpdate	-	this is the row in the test data file
-UsernameTextField  -  This is just a text for reference and it will display in the reports.
+-   Testscript name should be written in first column 
+-	You can organize test data in sheets, how ever not required to specify the sheet name. Our framework can identify the Testscript name and get the data
+in the testdata sheet that filters the value horizontally, here our framework dynamically captures the method name and assigns to the variable sThisMethod.
+-   parameter4 - Username is the column heading in the testdata file that filters text
+
+## Sample of getdata methods.
+	System.out.println("user value 2 : " + getdata("Username"));
+	System.out.println("user value 3 : " + getdata("Password"));
+	
 
 # Reporting
-Report will be created in the Reports folder with a time stamp. So when you run the script again and again, it will not overwrite the report.
-
-
-
 ## How to write Reporting
-Each test script should have the following line in initialize() method which is with TestNG annotation BeforeSuite
-- **Reporting.startReporting(this.getClass().getSimpleName());**
 
-So, name of the report can be taken as the class name append with date and time. For ex **Naukri_Login_24-09-2020_02.03.51**
+Report generation is built in our automation framework. 
+Name of the report can be taken as the class name append with date and time. For ex **DSP_Login_03-09-2020_02.03.51**
 
-Each method is considered as one Testscript and should have the following as the first line of code:
-**Reporting.startTest(getmethodname(new Object() {}));**
+Each method is considered as one TestScript and report is generated for each script. 
 Here we are considering the method name as the script name and the same name has been maintained in testdata sheet and the report.
+As an engineer your job is just to write the reporting statements where required. Sample [here](#How-to-write-the-Pass-and-Fail-reports)
 
 ## How to write the Pass and Fail reports
 
-we have customized the reporting and the reporting can be written in the following ways:
+we have customized the reporting that can be written in the following ways:
+
+The second boolean parameter represents to take screenshot or not. Screenshot will be displayed in the report as below
 
 ```
 Reporting.pass("Pass Description");
+Reporting.pass("Pass Description", true);
 Reporting.fail("Fail Description");
-Reporting.fail("Fail Description", Screencapture); 
+Reporting.fail("Fail Description", true);
+Reporting.Info("Information");
+Reporting.Info("Information", true); 
 ```
--	Screencapture is a boolean and can show the screenshot incase of specified as true.
-
-## Sample Report
 ![ReportScreenshot](Installs/docs/ReportScreenshot.png)
 
+**Tools Installation by Script:**
+
+- Download the GitHub repository provided to your project
+- Go to **Installs** folder
+- Double click the Batch file **Enable_To_Run.bat**
+- Run the file **Run_Installations** in Administrator Powershell and provide your options for the softwares:
 
 
+		
+		Do you want to install Eclipse ? (Y/N)
+
+		Do you want to install OpenJDk	? (Y/N)
+
+		Do you want to install Git	? (Y/N)
 
 
+**Manual Installations:**
 
-
-Update your naukri resume with our Framework:
-
-We have created a sample script to update your resume on naukri.
-
+- *Eclipse*  : Eclipse can be downloaded from the [link](https://www.eclipse.org/downloads/packages/release/2018-09/r/eclipse-ide-java-ee-developers)
+- *Java*   : Copy the folder Installs to the local and run the Install_Openjdk.ps1 in Elevated shell.
+- *TestNG* : This can be handled with pom.xml
+- *Extent* : This can be handled with pom.xml
+- *Git*	   : Copy the folder from docs/Scripts to the local folder and run the Install_Git.ps1 in Elevated shell.

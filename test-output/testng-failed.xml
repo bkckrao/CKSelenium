@@ -3,15 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Bachu.Scripts.NaukriUpdate">
+      <class name="com.Bachu.Scripts.Naukri">
         <methods>
           <include name="initialize"/>
-          <include name="setUp"/>
-          <include name="aftermethod"/>
-          <include name="teardown"/>
           <include name="naukriupdate"/>
+          <include name="setUp"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- com.Bachu.Scripts.NaukriUpdate -->
+      </class> <!-- com.Bachu.Scripts.Naukri -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

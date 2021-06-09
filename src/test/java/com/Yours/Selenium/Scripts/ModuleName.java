@@ -4,24 +4,15 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
-import com.Bachu.Selenium.Basetest.BaseTest;
-import com.Bachu.Selenium.Framework.Lib.Browser;
-import com.Bachu.Selenium.Reporting.Reporting;
+import com.CK.Selenium.Basetest.BaseTest;
+import com.CK.Selenium.Browser.*;
+import com.CK.Selenium.Reporting.Reporting;
 
 public class ModuleName extends ModuleName_Library{
 
 
-private String getdata(String rowheading, String columnHeading) {
-	return getdata(sTestdataFile, sTestdataSheet, rowheading, columnHeading);
-}
-
-@BeforeSuite
-public void initialize() {
-	Reporting.startReporting(this.getClass().getSimpleName());
-	sTestdataFile = getproperty("testdatafile");
-	sTestdataSheet = getproperty("testdatasheet");
-}
 
 @BeforeTest
 public void setUp() throws Exception {
@@ -32,17 +23,6 @@ public void setUp() throws Exception {
 	maximizethewindow(); deletecookies();
 }
 
-@AfterMethod
-public void aftermethod() {
-	Reporting.endTest();
-}
-
-@AfterSuite
-public void teardown() {
-	driver.quit();
-	Reporting.reportflush();
-	Reporting.reportclose();
-}
 // ---------------------------XXXXXXXXXXXXXXXXX      Do NOT CHANGE ABOVE LINES       XXXXXXXXXXXXXXXXX------------------------------------------
 
 
@@ -50,6 +30,9 @@ public void teardown() {
  * Start writing methods and scripting from here
  */
 
-
+@Test
+public void test1() {
+	
+}
 
 }

@@ -8,24 +8,28 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.Bachu.Pages.Naukri_Ids;
-import com.Bachu.Selenium.Basetest.BaseTest;
-import com.Bachu.Selenium.Framework.Lib.Browser;
-import com.Bachu.Selenium.Reporting.Reporting;
-import com.Bachu.Selenium.Framework.Lib.FrameLib;
-import com.Bachu.Selenium.Framework.Lib.Util;
+import com.CK.Selenium.*;
+import com.CK.Selenium.Basetest.BaseTest;
+import com.CK.Selenium.Browser.Browser;
+import com.CK.Selenium.Framework.Lib.FrameLib;
+import com.CK.Selenium.Framework.Lib.Util;
 
 public class Naukri extends FrameLib{
-
+	
+	private String filename = "CK_Devops_Testing.docx";
+/*
 	private String getdata(String rowheading, String columnHeading) {
 		return getdata(sTestdataFile, sTestdataSheet, rowheading, columnHeading);
 	}
-
-	@BeforeSuite
+*/
+/*	@BeforeSuite
 	public void initialize() {
 		Reporting.startReporting(this.getClass().getSimpleName());
 		sTestdataFile = getproperty("testdatafile");
-		sTestdataSheet = getproperty("testdatasheet");
+//		sTestdataSheet = getproperty("testdatasheet");
 	}
+	
+	*/
 
 	@BeforeTest
 	public void setUp() throws Exception {
@@ -36,37 +40,26 @@ public class Naukri extends FrameLib{
 		maximizethewindow(); deletecookies();
 	}
 
-	@AfterMethod
-	public void aftermethod() {
-		Reporting.endTest();
-	}
-
-	@AfterSuite
-	public void teardown() {
-		driver.quit();
-		Reporting.reportflush();
-		Reporting.reportclose();
-	}
-	// ---------------------------XXXXXXXXXXXXXXXXX      Do NOT CHANGE ABOVE LINES       XXXXXXXXXXXXXXXXX------------------------------------------
+	
 	@Test
 	public void naukriupdate() {
-		Reporting.startTest(getmethodname(new Object() {}));
+//		Reporting.startTest(getmethodname(new Object() {}));
 		
 		
 //		To get the path of resume which is placed in the Testdata folder.
-		String sResumePath = sTestdataPath + "CK_DevOps_Resume.docx";
+		String sResumePath = sTestdataPath + filename;
 		
 //		To get the usename from the Excel sheet which is placed in the Testdata folder, name of the sheet is declared in the config.properties
-		String sUsername = getdata(getmethodname(new Object() {}), "Username");
+		String sUsername = getdata("Username");
 		
 //		To get the Password from the Excel sheet which is placed in the Testdata fodler, name of the sheet is declared in the config.proerties
-		String sPassword = getdata(getmethodname(new Object() {}), "Password");
+		String sPassword = getdata("Password");
 
 //		Waiting and verifying the presence of Login link
 		Naukri_Ids.loginLink.isElementPresent("Login Link element");
 		
 //		Clicking the Login Link
-		Naukri_Ids.loginLink.click();
+		Naukri_Ids.loginLink.click("Login Link");
 		
 //		Waiting and verifying the presence of Username Text field
 		Naukri_Ids.usernametf.isElementPresent("Username Text field");
@@ -84,7 +77,8 @@ public class Naukri extends FrameLib{
 		Naukri_Ids.myNaukriLink.isElementPresent("My naukri Link");
 		
 //		Hovering the My naukri Link  and clikcing the Edit Profile Button
-		hovernclick(Naukri_Ids.myNaukriLink.getElement(), Naukri_Ids.editProfileLink.getElement());
+//		hovernclick(Naukri_Ids.myNaukriLink.getElement(), Naukri_Ids.editProfileLink.getElement());
+		Naukri_Ids.editProfileLink.click("Edit Profile link");
 		
 //		Waiting for the My Profile  Page and validating the Title
 		waitfortitleandvalidate("Profile | Mynaukri");
