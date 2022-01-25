@@ -93,8 +93,8 @@ Each script should have the following lines in initialize() to get the names of 
 sample test data creation:
 | TestScriptName                        | Username | Password   |
 |---------------------------------------|----------|------------|
-| dsp_TS01_Login_with_Valid_Credentials | DspUser1 | Gl0bl3@d$P |
-| dsp_TS02_Login_with_Invalid_UserName  | Invalid  | Gl0bl3@d$P |
+| dsp_TS01_Login_with_Valid_Credentials | DspUser1 | password |
+| dsp_TS02_Login_with_Invalid_UserName  | Invalid  | password |
 | dsp_TS03_Login_with_Invalid_Password  | DspUser1 | Invalid    |
 
 dsp_TS01_Login_with_Valid_Credentials - this is the test script name 
