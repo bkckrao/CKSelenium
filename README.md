@@ -19,6 +19,8 @@
 
 [Autoit](/Installs/docs/Autoit.md)
 
+[How to use this suite to update the Naukri profile](#How-to-use-this-suite-to-run-the-Naukri-profile)
+
 **Overview:**
 
 Automation Framework is a set of guidelines	and rules used for scripting and controlling the execution of tests  comparison of actual outcomes and expected outcomes. It integrates testdata, object handling and library functions.
@@ -43,8 +45,8 @@ Automation engineer need to have basic knowledge on Java, Xpath.
 
 **Packages:** We are maintaining different packages for pages and scripts.
 For ex: 
-- com.Diyar.ProjectName.pages
-- com.Diyar.ProjectName.Scripts
+- com.CK.ProjectName.pages
+- com.CK.ProjectName.Scripts
 
 
 
@@ -55,7 +57,7 @@ For ex:
 Page Object is a Design Pattern which has become popular in test automation for enhancing test maintenance and reducing code duplication. A page object is an object-oriented classes
 
 - Each webpage in the application should have a page object class.
-- create a class with reasonable name, For example DSP_HomePage.java, DSP_LoginPage.java
+- create a class with reasonable name, For example ck_HomePage.java, ck_LoginPage.java
 -  Xpath is the default option and not required to specify. so if the element is not Xpath, it should be declared like type.ID where Type is the Enum.
 - All elements should be declared static, Sample below
 ```
@@ -63,7 +65,7 @@ public static Textfield UserName = new Textfield("Username", Type.ID);
 public static Textfield Password = new Textfield("Password", Type.ID);
 public static Button LoginButton = new  Button("//button[@id = \"btnLogin\"]");
 public static Button PageinArabic = new Button("//span[@id='langChange']/i/span[contains(text(), 'English')]");
-public static Label Heading = new Label("//h3[contains(text(), 'DSP Document Signer')]");
+public static Label Heading = new Label("//h3[contains(text(), 'ck Document Signer')]");
 public static SelectBox pagesize = new SelectBox("//select[@id='sdrpPageSize']");
 ```
 
@@ -93,15 +95,15 @@ Each script should have the following lines in initialize() to get the names of 
 sample test data creation:
 | TestScriptName                        | Username | Password   |
 |---------------------------------------|----------|------------|
-| dsp_TS01_Login_with_Valid_Credentials | DspUser1 | password |
-| dsp_TS02_Login_with_Invalid_UserName  | Invalid  | password |
-| dsp_TS03_Login_with_Invalid_Password  | DspUser1 | Invalid    |
+| ck_TS01_Login_with_Valid_Credentials | ckUser1 | Gl0bl3@d$P |
+| ck_TS02_Login_with_Invalid_UserName  | Invalid  | Gl0bl3@d$P |
+| ck_TS03_Login_with_Invalid_Password  | ckUser1 | Invalid    |
 
-dsp_TS01_Login_with_Valid_Credentials - this is the test script name 
+ck_TS01_Login_with_Valid_Credentials - this is the test script name 
 Username - this is the field used to get the value 
 
 Excel workbook name should be written in Config.properties
-- testdatafile = DSP_Testdata.xlsx
+- testdatafile = ck_Testdata.xlsx
 
 
 **Each test script should have these values**
@@ -122,7 +124,7 @@ in the testdata sheet that filters the value horizontally, here our framework dy
 ## How to write Reporting
 
 Report generation is built in our automation framework. 
-Name of the report can be taken as the class name append with date and time. For ex **DSP_Login_03-09-2020_02.03.51**
+Name of the report can be taken as the class name append with date and time. For ex **ck_Login_03-09-2020_02.03.51**
 
 Each method is considered as one TestScript and report is generated for each script. 
 Here we are considering the method name as the script name and the same name has been maintained in testdata sheet and the report.
@@ -167,3 +169,18 @@ Reporting.Info("Information", true);
 - *TestNG* : This can be handled with pom.xml
 - *Extent* : This can be handled with pom.xml
 - *Git*	   : Copy the folder from docs/Scripts to the local folder and run the Install_Git.ps1 in Elevated shell.
+
+
+# How to use this suite to update the Naukri profile 
+
+we have created a sample suite to make use of our ckSelenium framework and also make you understand better.
+
+### Steps to upload your CV in Naukri using this suite
+
+ - Enter your username, password of Naukri in the excel sheet(named Naukri_test_data) which is placed in Testdata folder.
+ - Copy your cv in the same Testdata folder
+ - Copy the name of your cv and place the same name in below line of Naukri.java (in **src\main\java\com\Bachu\Scripts\Naukri.java**)
+
+		private String filename = "CK_Devops_Testing.docx";
+
+Right click on Project --> Run as --> Maven Install
