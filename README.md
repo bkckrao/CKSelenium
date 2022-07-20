@@ -95,9 +95,9 @@ Each script should have the following lines in initialize() to get the names of 
 sample test data creation:
 | TestScriptName                        | Username | Password   |
 |---------------------------------------|----------|------------|
-| ck_TS01_Login_with_Valid_Credentials | ckUser1 | Gl0bl3@d$P |
-| ck_TS02_Login_with_Invalid_UserName  | Invalid  | Gl0bl3@d$P |
-| ck_TS03_Login_with_Invalid_Password  | ckUser1 | Invalid    |
+| ck_TS01_Login_with_Valid_Credentials | ckUser1 | ckpwd1 |
+| ck_TS02_Login_with_Invalid_UserName  | Invalid  | ckInvalid1 |
+| ck_TS03_Login_with_Invalid_Password  | ckUser1 | Invalidpwd    |
 
 ck_TS01_Login_with_Valid_Credentials - this is the test script name 
 Username - this is the field used to get the value 
