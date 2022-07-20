@@ -1,17 +1,11 @@
-package com.Bachu.Pages;
 
-import com.CK.Selenium.Framework.Lib.*;
-import com.CK.Selenium.Framework.Lib.SimpleLib.Type;
+package com.CK.Pages;
 
-/*
 import com.Bachu.Selenium.Framework.Lib.Button;
-import com.CK.Selenium.Framework.Lib.Label;
-import com.CK.Selenium.Framework.Lib.Link;
-import com.CK.Selenium.Framework.Lib.Textfield;
-import com.CK.Selenium.Framework.Lib.SimpleLib.Type;
-*/
-
-
+import com.Bachu.Selenium.Framework.Lib.Label;
+import com.Bachu.Selenium.Framework.Lib.Link;
+import com.Bachu.Selenium.Framework.Lib.SimpleLib.Type;
+import com.Bachu.Selenium.Framework.Lib.Textfield;
 
 public class Naukri_Ids {
 
@@ -33,4 +27,5 @@ public class Naukri_Ids {
 	public static Label successmsg = new Label("//span[@id='attachCVMsgBox']");	
 	public static Label uploadedon = new Label("//span[@class='updateOn']");
 //	public static Label uploadedon = new Label(".updateOn", Type.CSS);
+	public static String uploadBtn = "//div[@class='uploadContainer']/input";
 }

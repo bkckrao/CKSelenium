@@ -1,50 +1,24 @@
-package com.Bachu.Scripts;
+package com.CK.Scripts;
 
-import org.openqa.selenium.By;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import com.Bachu.Pages.Naukri_Ids;
-import com.CK.Selenium.*;
-import com.CK.Selenium.Basetest.BaseTest;
-import com.CK.Selenium.Browser.Browser;
-import com.CK.Selenium.Framework.Lib.FrameLib;
-import com.CK.Selenium.Framework.Lib.Util;
+import com.Bachu.Selenium.Basetest.BaseTest;
+import com.Bachu.Selenium.Framework.Lib.Util;
+import com.Bachu.Selenium.Reporting.Reporting;
+import com.CK.Pages.Naukri_Ids;
 
-public class Naukri extends FrameLib{
+public class Naukri extends BaseTest{
 	
 	private String filename = "CK_Devops_Testing.docx";
-/*
-	private String getdata(String rowheading, String columnHeading) {
-		return getdata(sTestdataFile, sTestdataSheet, rowheading, columnHeading);
-	}
-*/
-/*	@BeforeSuite
-	public void initialize() {
-		Reporting.startReporting(this.getClass().getSimpleName());
-		sTestdataFile = getproperty("testdatafile");
-//		sTestdataSheet = getproperty("testdatasheet");
-	}
+
 	
-	*/
-
-	@BeforeTest
-	public void setUp() throws Exception {
-		//		Browser.openBrowser(Select_Browser.FF);
-		Browser.openBrowser();
-//		Browser.openBrowser(browser.IE);
-		Browser.getURL(BaseTest.sURL);
-		maximizethewindow(); deletecookies();
-	}
-
 	
 	@Test
 	public void naukriupdate() {
 //		Reporting.startTest(getmethodname(new Object() {}));
 		
+//		browser.openBrowser();
+		browser.getURL(sURL);
 		
 //		To get the path of resume which is placed in the Testdata folder.
 		String sResumePath = sTestdataPath + filename;
@@ -65,7 +39,7 @@ public class Naukri extends FrameLib{
 		Naukri_Ids.usernametf.isElementPresent("Username Text field");
 		
 //		Entering the username value in the Username text Field
-		Naukri_Ids.usernametf.setText(sUsername, "user name text fieeld");
+		Naukri_Ids.usernametf.setText(sUsername, "user name text field");
 
 //		Entering the Password value in the Password text Field
 		Naukri_Ids.passwordtf.setText(sPassword, "Password text field");
@@ -81,25 +55,21 @@ public class Naukri extends FrameLib{
 		Naukri_Ids.editProfileLink.click("Edit Profile link");
 		
 //		Waiting for the My Profile  Page and validating the Title
-		waitfortitleandvalidate("Profile | Mynaukri");
+		lib.waitfortitleandvalidate("Profile | Mynaukri");
 		
 		
 //		Clicking the Update Resume button and passing the path of the Resume		
-		try {
-			driver.findElement(By.xpath("//div[@class='uploadContainer']/input")).sendKeys(sResumePath);
-		} catch (Exception e1) {
-			System.out.println("Cause : " + e1.getCause());
-			System.out.println("Message : "+e1.getMessage());
-			e1.printStackTrace();
-		}
+		lib.clickButtonAndUploadFile(Naukri_Ids.uploadBtn, sResumePath);
+
 		
 //		To wait for 3 seconds
 		Util.sleepforseconds(3);
 		
 //		To see the Uploaded on message	
 		String uploadDate = Naukri_Ids.uploadedon.getText();
-		System.out.println("Resume last updated : " + uploadDate.replace("Uploaded on ", ""));
+//		System.out.println("Resume last updated : " + uploadDate.replace("Uploaded on ", ""));
 		
+		Reporting.pass("Resume last updated : " + uploadDate.replace("Uploaded on ", ""), true);
 	}
 	
 	

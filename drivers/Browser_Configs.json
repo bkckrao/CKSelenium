@@ -1,26 +1,24 @@
 {
 
-"capabilities": {
-    "build": "browserstack-build-1",
-    "name": "suite_test",
-    "browserstack.debug": true
-  },
-  
 "chrome": {
       "browser": "chrome",
-      "incognito": "incognito",
-      "start-maximized": "start-maximized"
-  },
-  
+      "os": "Windows",
+      "os_version":"10",
+      "browser_version": "latest"
+		},
+		
 "firefox": {
-      "browser": "firefox"
-  },
-"safari": {
-      "os": "OS X",
-      "browser": "safari"
-  },
-"ie": {
-      "browser": "internet explorer"
-  }
+	"browser": "Firefox",
+	"os": "Windows",
+    "os_version":"10",
+    "browser_version": "latest"
+    },
+		
+"edge": {
+	"browser": "Edge",
+	"os": "Windows",
+    "os_version":"10",
+    "browser_version": "latest"
+    }
 
 }
