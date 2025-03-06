@@ -1,8 +1,9 @@
 # Automation_framework
 ====================================================
 
+<video src="https://github.com/user-attachments/assets/aa8f35c0-c8e9-4a8b-84ff-a195e7bc2685" controls></video>
 
-https://github.com/user-attachments/assets/aa8f35c0-c8e9-4a8b-84ff-a195e7bc2685
+
 
 
 
