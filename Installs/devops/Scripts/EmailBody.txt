@@ -1,0 +1,9 @@
+Hello Dear,
+
+                     This Email is the Notification from Jenkins by the project : ${JOB_NAME}.
+                     Please find the attached Execution Report and the log file.
+                     
+
+Thankyou,
+Kaja ChennakesavaRao Bachu
+                     

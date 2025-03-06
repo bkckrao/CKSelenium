@@ -1,0 +1,606 @@
+2025-03-06 12:34:50 DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\ck\AppData\Local\Temp\testng-eclipse--932960203\testng-customsuite.xml"
+2025-03-06 12:34:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 9 ms.
+2025-03-06 12:34:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 28 ms.
+2025-03-06 12:34:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 12:34:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2025-03-06 12:34:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 12:34:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 12:34:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 12:34:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 12:34:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 12:34:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2025-03-06 12:34:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 12:34:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 12:34:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 12:34:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 12:34:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 12:34:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 12:34:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 12:34:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 12:34:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 12:34:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 12:34:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 12:34:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 12:34:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 12:34:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 12:34:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+2025-03-06 12:34:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 12:34:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 12:34:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 12:34:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 12:34:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 12:34:50 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ck\AppData\Local\Temp\testng-eclipse--932960203\testng-customsuite.xml
+
+2025-03-06 12:34:51 INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 6 ms.
+2025-03-06 12:35:01 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@58860997: 91 ms
+2025-03-06 12:35:01 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@fb6097b: 19 ms
+2025-03-06 12:35:01 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@5e048149: 48 ms
+2025-03-06 12:35:01 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@102efc59: 17 ms
+2025-03-06 12:35:01 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@19650aa6: 8 ms
+2025-03-06 12:35:01 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@3ce53f6a: 0 ms
+2025-03-06 12:38:29 DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\ck\AppData\Local\Temp\testng-eclipse-2023571295\testng-customsuite.xml"
+2025-03-06 12:38:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 7 ms.
+2025-03-06 12:38:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 15 ms.
+2025-03-06 12:38:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 12:38:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 3 ms.
+2025-03-06 12:38:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 12:38:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 12:38:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 12:38:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 12:38:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 12:38:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 12:38:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 12:38:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 12:38:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 12:38:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 12:38:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 12:38:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 12:38:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 12:38:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 12:38:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 12:38:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 12:38:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 12:38:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 12:38:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 12:38:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 12:38:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 12:38:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 12:38:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 12:38:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 12:38:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 12:38:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 12:38:29 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ck\AppData\Local\Temp\testng-eclipse-2023571295\testng-customsuite.xml
+
+2025-03-06 12:38:30 INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 5 ms.
+2025-03-06 12:38:33 INFO  sauce_Login -  
+
+ <<<<<<<<<<<<<<<<<<<<<<   starting Test  :  sauce_Login  >>>>>>>>>>>>>>>>>>>>>>>
+2025-03-06 12:38:39 INFO  sauce_Login - System is retrieving test data...
+2025-03-06 12:39:19 INFO  sauce_Login - System is waiting for the Element :"Username" from 1 seconds
+2025-03-06 12:39:24 INFO  sauce_Login - Waiting for 5 seconds
+2025-03-06 12:43:12 DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\ck\AppData\Local\Temp\testng-eclipse-650232260\testng-customsuite.xml"
+2025-03-06 12:43:12 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 9 ms.
+2025-03-06 12:43:12 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 21 ms.
+2025-03-06 12:43:12 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 12:43:12 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 12:43:12 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 12:43:12 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 12:43:12 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 12:43:12 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 12:43:12 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+2025-03-06 12:43:12 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2025-03-06 12:43:12 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 12:43:12 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 12:43:12 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 12:43:12 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 12:43:12 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 12:43:12 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 12:43:12 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 12:43:12 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 12:43:12 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 12:43:12 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 12:43:12 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+2025-03-06 12:43:12 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2025-03-06 12:43:12 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 12:43:12 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 12:43:12 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 12:43:12 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2025-03-06 12:43:12 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 12:43:12 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 12:43:12 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 12:43:12 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 12:43:12 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ck\AppData\Local\Temp\testng-eclipse-650232260\testng-customsuite.xml
+
+2025-03-06 12:43:13 INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 7 ms.
+2025-03-06 12:43:15 INFO  sauce_Login -  
+
+ <<<<<<<<<<<<<<<<<<<<<<   starting Test  :  sauce_Login  >>>>>>>>>>>>>>>>>>>>>>>
+2025-03-06 12:43:16 INFO  sauce_Login -  
+ 
+ =============================$$$$$$$$$$$$$$$$$$$$  -  End of Report  -  $$$$$$$$$$$$$$$$$$$$===================================================
+2025-03-06 12:43:18 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@5a49af50: 269 ms
+2025-03-06 12:43:18 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@58c1da09: 51 ms
+2025-03-06 12:43:18 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@16a5eb6d: 114 ms
+2025-03-06 12:43:18 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@5034f5dd: 13 ms
+2025-03-06 12:43:19 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@24eeac69: 48 ms
+2025-03-06 12:43:19 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@18539cb1: 0 ms
+2025-03-06 13:00:05 DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\ck\AppData\Local\Temp\testng-eclipse-531581290\testng-customsuite.xml"
+2025-03-06 13:00:05 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 7 ms.
+2025-03-06 13:00:05 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 18 ms.
+2025-03-06 13:00:05 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 13:00:05 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2025-03-06 13:00:05 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 13:00:05 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 13:00:05 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 13:00:05 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 13:00:05 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 13:00:05 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 13:00:05 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 13:00:05 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 13:00:05 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 13:00:05 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 13:00:05 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 13:00:05 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 13:00:05 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 13:00:05 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 13:00:05 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 13:00:05 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 13:00:05 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 13:00:05 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 13:00:05 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 13:00:05 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 13:00:05 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 13:00:05 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2025-03-06 13:00:05 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 13:00:05 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 13:00:05 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+2025-03-06 13:00:05 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 13:00:05 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ck\AppData\Local\Temp\testng-eclipse-531581290\testng-customsuite.xml
+
+2025-03-06 13:00:06 INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 4 ms.
+2025-03-06 13:00:08 INFO  sauce_Login -  
+
+ <<<<<<<<<<<<<<<<<<<<<<   starting Test  :  sauce_Login  >>>>>>>>>>>>>>>>>>>>>>>
+2025-03-06 13:00:09 INFO  sauce_Login - System is retrieving test data...
+2025-03-06 13:00:12 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 13:00:12 INFO  sauce_Login - Element :"Username" found within the Time
+2025-03-06 13:00:12 INFO  sauce_Login - Value = "standard_user" is entered successfully in Textfield : "Username"
+2025-03-06 13:00:13 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 13:00:13 INFO  sauce_Login - Element :"Password" found within the Time
+2025-03-06 13:00:13 INFO  sauce_Login - Value = "secret_sauce" is entered successfully in Textfield : "Password"
+2025-03-06 13:00:15 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 13:00:15 INFO  sauce_Login - Element :"Login Btn" found within the Time
+2025-03-06 13:00:15 INFO  sauce_Login - System successfully clicked on the element "Login Btn"
+2025-03-06 13:00:16 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 13:00:16 INFO  sauce_Login - Element :"Products heading" found within the Time
+2025-03-06 13:00:17 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 13:00:18 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 13:00:18 INFO  sauce_Login - Element :"Burger Menu" found within the Time
+2025-03-06 13:00:18 INFO  sauce_Login - System successfully clicked on the element "Burger Menu"
+2025-03-06 13:00:19 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 13:00:20 INFO  sauce_Login - Element :"AllItems" found within the Time
+2025-03-06 13:00:21 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 13:00:21 INFO  sauce_Login - AllItems is present in the page
+2025-03-06 13:00:22 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 13:00:22 INFO  sauce_Login - Element :"About" found within the Time
+2025-03-06 13:00:23 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 13:00:23 INFO  sauce_Login - About is present in the page
+2025-03-06 13:00:24 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 13:00:24 INFO  sauce_Login - Element :"Logout" found within the Time
+2025-03-06 13:00:25 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 13:00:25 INFO  sauce_Login - Logout is present in the page
+2025-03-06 13:00:26 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 13:00:26 INFO  sauce_Login - Element :"ResetAppState" found within the Time
+2025-03-06 13:00:27 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 13:00:27 INFO  sauce_Login - ResetAppState is present in the page
+2025-03-06 13:00:27 INFO  sauce_Login - 
+ 
+ xxxxxxxxxxxxxxxx   -   End of Test  -  xxxxxxxxxxxxxxxx 
+ 
+2025-03-06 13:00:29 INFO  sauce_Login -  
+ 
+ =============================$$$$$$$$$$$$$$$$$$$$  -  End of Report  -  $$$$$$$$$$$$$$$$$$$$===================================================
+2025-03-06 13:00:30 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@cdb3c85: 116 ms
+2025-03-06 13:00:30 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@37606fee: 1 ms
+2025-03-06 13:00:30 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@687389a6: 12 ms
+2025-03-06 13:00:30 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@53d6e959: 8 ms
+2025-03-06 13:00:30 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@6870cfac: 13 ms
+2025-03-06 13:00:30 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@45554613: 0 ms
+2025-03-06 13:03:35 DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\ck\AppData\Local\Temp\testng-eclipse--1912234809\testng-customsuite.xml"
+2025-03-06 13:03:35 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 9 ms.
+2025-03-06 13:03:35 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 20 ms.
+2025-03-06 13:03:35 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 13:03:35 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 13:03:35 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 13:03:35 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 13:03:35 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 13:03:35 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 13:03:35 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 13:03:35 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 13:03:35 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 13:03:35 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 13:03:35 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 13:03:35 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 13:03:35 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 13:03:35 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 13:03:35 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 13:03:35 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 2 ms.
+2025-03-06 13:03:35 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 13:03:35 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 13:03:35 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 13:03:35 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 13:03:35 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 13:03:35 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 13:03:35 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+2025-03-06 13:03:35 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 13:03:35 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 13:03:35 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 13:03:35 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 13:03:35 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 13:03:35 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ck\AppData\Local\Temp\testng-eclipse--1912234809\testng-customsuite.xml
+
+2025-03-06 13:03:36 INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 4 ms.
+2025-03-06 13:03:38 INFO  sauce_Login -  
+
+ <<<<<<<<<<<<<<<<<<<<<<   starting Test  :  sauce_Login  >>>>>>>>>>>>>>>>>>>>>>>
+2025-03-06 13:03:39 INFO  sauce_Login - System is retrieving test data...
+2025-03-06 13:03:41 INFO  sauce_Login - Maximizing the window
+2025-03-06 13:03:42 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 13:03:42 INFO  sauce_Login - Element :"Username" found within the Time
+2025-03-06 13:03:42 INFO  sauce_Login - Value = "standard_user" is entered successfully in Textfield : "Username"
+2025-03-06 13:03:43 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 13:03:43 INFO  sauce_Login - Element :"Password" found within the Time
+2025-03-06 13:03:43 INFO  sauce_Login - Value = "secret_sauce" is entered successfully in Textfield : "Password"
+2025-03-06 13:03:45 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 13:03:45 INFO  sauce_Login - Element :"Login Btn" found within the Time
+2025-03-06 13:03:45 INFO  sauce_Login - System successfully clicked on the element "Login Btn"
+2025-03-06 13:03:46 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 13:03:46 INFO  sauce_Login - Element :"Products heading" found within the Time
+2025-03-06 13:03:47 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 13:03:48 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 13:03:48 INFO  sauce_Login - Element :"Burger Menu" found within the Time
+2025-03-06 13:03:48 INFO  sauce_Login - System successfully clicked on the element "Burger Menu"
+2025-03-06 13:03:49 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 13:03:49 INFO  sauce_Login - Element :"AllItems" found within the Time
+2025-03-06 13:03:50 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 13:03:50 INFO  sauce_Login - AllItems is present in the page
+2025-03-06 13:03:51 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 13:03:51 INFO  sauce_Login - Element :"About" found within the Time
+2025-03-06 13:03:52 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 13:03:52 INFO  sauce_Login - About is present in the page
+2025-03-06 13:03:53 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 13:03:54 INFO  sauce_Login - Element :"Logout" found within the Time
+2025-03-06 13:03:55 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 13:03:55 INFO  sauce_Login - Logout is present in the page
+2025-03-06 13:03:56 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 13:03:56 INFO  sauce_Login - Element :"ResetAppState" found within the Time
+2025-03-06 13:03:57 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 13:03:57 INFO  sauce_Login - ResetAppState is present in the page
+2025-03-06 13:03:57 INFO  sauce_Login - 
+ 
+ xxxxxxxxxxxxxxxx   -   End of Test  -  xxxxxxxxxxxxxxxx 
+ 
+2025-03-06 13:03:59 INFO  sauce_Login -  
+ 
+ =============================$$$$$$$$$$$$$$$$$$$$  -  End of Report  -  $$$$$$$$$$$$$$$$$$$$===================================================
+2025-03-06 13:04:00 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@4b7ed03e: 253 ms
+2025-03-06 13:04:00 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@636985df: 0 ms
+2025-03-06 13:04:00 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@6629643d: 32 ms
+2025-03-06 13:04:00 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@64f4f12: 11 ms
+2025-03-06 13:04:00 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@62a6674f: 5 ms
+2025-03-06 13:04:00 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@70881123: 0 ms
+2025-03-06 13:44:32 DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\ck\AppData\Local\Temp\testng-eclipse-663353640\testng-customsuite.xml"
+2025-03-06 13:44:32 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 10 ms.
+2025-03-06 13:44:32 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 21 ms.
+2025-03-06 13:44:32 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 13:44:32 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 13:44:32 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 13:44:32 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 13:44:32 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 13:44:32 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 13:44:32 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 13:44:32 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 13:44:32 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 13:44:32 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 13:44:32 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 13:44:32 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 13:44:32 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 13:44:32 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 13:44:32 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 13:44:32 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 13:44:32 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 13:44:32 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 13:44:32 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 13:44:32 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 13:44:32 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 13:44:32 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 13:44:32 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 13:44:32 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 13:44:32 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 13:44:32 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 13:44:32 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 13:44:32 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2025-03-06 13:44:32 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ck\AppData\Local\Temp\testng-eclipse-663353640\testng-customsuite.xml
+
+2025-03-06 13:44:33 INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 3 ms.
+2025-03-06 13:44:36 INFO  sauce_Login -  
+
+ <<<<<<<<<<<<<<<<<<<<<<   starting Test  :  sauce_Login  >>>>>>>>>>>>>>>>>>>>>>>
+2025-03-06 13:44:37 INFO  sauce_Login - System is retrieving test data...
+2025-03-06 13:44:39 INFO  sauce_Login - Maximizing the window
+2025-03-06 13:44:40 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 13:44:40 INFO  sauce_Login - Element :"Username" found within the Time
+2025-03-06 13:44:40 INFO  sauce_Login - Value = "standard_user" is entered successfully in Textfield : "Username"
+2025-03-06 13:44:41 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 13:44:41 INFO  sauce_Login - Element :"Password" found within the Time
+2025-03-06 13:44:41 INFO  sauce_Login - Value = "secret_sauce" is entered successfully in Textfield : "Password"
+2025-03-06 13:44:42 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 13:44:42 INFO  sauce_Login - Element :"Login Btn" found within the Time
+2025-03-06 13:44:42 INFO  sauce_Login - System successfully clicked on the element "Login Btn"
+2025-03-06 13:44:44 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 13:44:44 INFO  sauce_Login - Element :"Products heading" found within the Time
+2025-03-06 13:44:45 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 13:44:46 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 13:44:46 INFO  sauce_Login - Element :"Burger Menu" found within the Time
+2025-03-06 13:44:46 INFO  sauce_Login - System successfully clicked on the element "Burger Menu"
+2025-03-06 13:44:47 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 13:44:47 INFO  sauce_Login - Element :"AllItems" found within the Time
+2025-03-06 13:44:48 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 13:44:48 INFO  sauce_Login - AllItems is present in the page
+2025-03-06 13:44:49 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 13:44:49 INFO  sauce_Login - Element :"About" found within the Time
+2025-03-06 13:44:50 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 13:44:50 INFO  sauce_Login - About is present in the page
+2025-03-06 13:44:51 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 13:44:51 INFO  sauce_Login - Element :"Logout" found within the Time
+2025-03-06 13:44:52 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 13:44:52 INFO  sauce_Login - Logout is present in the page
+2025-03-06 13:44:53 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 13:44:53 INFO  sauce_Login - Element :"ResetAppState" found within the Time
+2025-03-06 13:44:54 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 13:44:54 INFO  sauce_Login - ResetAppState is present in the page
+2025-03-06 13:44:54 INFO  sauce_Login - 
+ 
+ xxxxxxxxxxxxxxxx   -   End of Test  -  xxxxxxxxxxxxxxxx 
+ 
+2025-03-06 13:44:57 INFO  sauce_Login -  
+ 
+ =============================$$$$$$$$$$$$$$$$$$$$  -  End of Report  -  $$$$$$$$$$$$$$$$$$$$===================================================
+2025-03-06 13:44:57 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@3fb450d7: 102 ms
+2025-03-06 13:44:57 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@4b7ed03e: 2 ms
+2025-03-06 13:44:57 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@251c90f: 27 ms
+2025-03-06 13:44:57 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@22791b75: 14 ms
+2025-03-06 13:44:57 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@53314f76: 8 ms
+2025-03-06 13:44:57 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@62a6674f: 0 ms
+2025-03-06 17:05:28 DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\ck\AppData\Local\Temp\testng-eclipse--459251484\testng-customsuite.xml"
+2025-03-06 17:05:28 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 11 ms.
+2025-03-06 17:05:28 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 15 ms.
+2025-03-06 17:05:28 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 17:05:28 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2025-03-06 17:05:28 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 17:05:28 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 17:05:28 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 17:05:28 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 17:05:28 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 17:05:28 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 17:05:28 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 17:05:28 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2025-03-06 17:05:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 17:05:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 17:05:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 17:05:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 17:05:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 17:05:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 17:05:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+2025-03-06 17:05:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 17:05:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 17:05:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2025-03-06 17:05:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 17:05:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 17:05:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 17:05:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 6 ms.
+2025-03-06 17:05:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 17:05:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 17:05:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 17:05:29 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 17:05:29 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ck\AppData\Local\Temp\testng-eclipse--459251484\testng-customsuite.xml
+
+2025-03-06 17:05:30 INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 5 ms.
+2025-03-06 17:05:39 INFO  sauce_Login -  
+
+ <<<<<<<<<<<<<<<<<<<<<<   starting Test  :  sauce_Login  >>>>>>>>>>>>>>>>>>>>>>>
+2025-03-06 17:05:41 INFO  sauce_Login - System is retrieving test data...
+2025-03-06 17:05:42 INFO  sauce_Login - Maximizing the window
+2025-03-06 17:05:43 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:05:43 INFO  sauce_Login - Element :"Username" found within the Time
+2025-03-06 17:05:43 INFO  sauce_Login - Value = "standard_user" is entered successfully in Textfield : "Username"
+2025-03-06 17:05:44 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:05:44 INFO  sauce_Login - Element :"Password" found within the Time
+2025-03-06 17:05:45 INFO  sauce_Login - Value = "secret_sauce" is entered successfully in Textfield : "Password"
+2025-03-06 17:05:46 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:05:46 INFO  sauce_Login - Element :"Login Btn" found within the Time
+2025-03-06 17:05:46 INFO  sauce_Login - System successfully clicked on the element "Login Btn"
+2025-03-06 17:05:47 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:05:47 INFO  sauce_Login - Element :"Products heading" found within the Time
+2025-03-06 17:05:48 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:05:49 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:05:49 INFO  sauce_Login - Element :"Burger Menu" found within the Time
+2025-03-06 17:05:49 INFO  sauce_Login - System successfully clicked on the element "Burger Menu"
+2025-03-06 17:05:50 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:05:51 INFO  sauce_Login - Element :"AllItems" found within the Time
+2025-03-06 17:05:52 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:05:52 INFO  sauce_Login - AllItems is present in the page
+2025-03-06 17:05:53 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:05:53 INFO  sauce_Login - Element :"ShoppingCart" found within the Time
+2025-03-06 17:05:54 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:05:54 INFO  sauce_Login - ShoppingCart is present in the page
+2025-03-06 17:05:55 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:05:55 INFO  sauce_Login - Element :"About" found within the Time
+2025-03-06 17:05:56 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:05:56 INFO  sauce_Login - About is present in the page
+2025-03-06 17:05:57 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:05:57 INFO  sauce_Login - Element :"Logout" found within the Time
+2025-03-06 17:05:58 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:05:58 INFO  sauce_Login - Logout is present in the page
+2025-03-06 17:05:59 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:05:59 INFO  sauce_Login - Element :"ResetAppState" found within the Time
+2025-03-06 17:06:00 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:06:00 INFO  sauce_Login - ResetAppState is present in the page
+2025-03-06 17:06:24 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:13:12 DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\ck\AppData\Local\Temp\testng-eclipse--1833497411\testng-customsuite.xml"
+2025-03-06 17:13:13 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 7 ms.
+2025-03-06 17:13:13 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 12 ms.
+2025-03-06 17:13:13 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 17:13:13 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 17:13:13 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 17:13:13 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 17:13:13 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 17:13:13 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 17:13:13 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 17:13:13 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 17:13:13 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 17:13:13 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 17:13:13 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 17:13:13 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 17:13:13 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 17:13:13 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 17:13:13 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 17:13:13 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 2 ms.
+2025-03-06 17:13:13 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 17:13:13 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 17:13:13 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 17:13:13 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 17:13:13 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 17:13:13 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 17:13:13 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 17:13:13 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 17:13:13 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 17:13:13 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 17:13:13 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-03-06 17:13:13 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-03-06 17:13:13 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ck\AppData\Local\Temp\testng-eclipse--1833497411\testng-customsuite.xml
+
+2025-03-06 17:13:13 INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 4 ms.
+2025-03-06 17:13:15 INFO  sauce_Login -  
+
+ <<<<<<<<<<<<<<<<<<<<<<   starting Test  :  sauce_Login  >>>>>>>>>>>>>>>>>>>>>>>
+2025-03-06 17:13:17 INFO  sauce_Login - System is retrieving test data...
+2025-03-06 17:13:18 INFO  sauce_Login - Maximizing the window
+2025-03-06 17:13:19 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:13:19 INFO  sauce_Login - Element :"Username" found within the Time
+2025-03-06 17:13:19 INFO  sauce_Login - Value = "standard_user" is entered successfully in Textfield : "Username"
+2025-03-06 17:13:20 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:13:20 INFO  sauce_Login - Element :"Password" found within the Time
+2025-03-06 17:13:21 INFO  sauce_Login - Value = "secret_sauce" is entered successfully in Textfield : "Password"
+2025-03-06 17:13:22 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:13:22 INFO  sauce_Login - Element :"Login Btn" found within the Time
+2025-03-06 17:13:22 INFO  sauce_Login - System successfully clicked on the element "Login Btn"
+2025-03-06 17:13:23 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:13:23 INFO  sauce_Login - Element :"Products heading" found within the Time
+2025-03-06 17:13:24 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:13:25 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:13:25 INFO  sauce_Login - Element :"Burger Menu" found within the Time
+2025-03-06 17:13:25 INFO  sauce_Login - System successfully clicked on the element "Burger Menu"
+2025-03-06 17:13:26 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:13:26 INFO  sauce_Login - Element :"AllItems" found within the Time
+2025-03-06 17:13:27 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:13:27 INFO  sauce_Login - AllItems is present in the page
+2025-03-06 17:13:28 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:13:28 INFO  sauce_Login - Element :"ShoppingCart" found within the Time
+2025-03-06 17:13:30 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:13:30 INFO  sauce_Login - ShoppingCart is present in the page
+2025-03-06 17:13:31 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:13:31 INFO  sauce_Login - Element :"About" found within the Time
+2025-03-06 17:13:32 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:13:32 INFO  sauce_Login - About is present in the page
+2025-03-06 17:13:33 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:13:33 INFO  sauce_Login - Element :"Logout" found within the Time
+2025-03-06 17:13:34 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:13:34 INFO  sauce_Login - Logout is present in the page
+2025-03-06 17:13:35 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:13:35 INFO  sauce_Login - Element :"ResetAppState" found within the Time
+2025-03-06 17:13:36 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:13:36 INFO  sauce_Login - ResetAppState is present in the page
+2025-03-06 17:13:37 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:13:37 INFO  sauce_Login - 
+ 
+ xxxxxxxxxxxxxxxx   -   End of Test  -  xxxxxxxxxxxxxxxx 
+ 
+2025-03-06 17:13:39 INFO  sauce_Login -  
+ 
+ =============================$$$$$$$$$$$$$$$$$$$$  -  End of Report  -  $$$$$$$$$$$$$$$$$$$$===================================================
+2025-03-06 17:13:40 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@2f0ccb34: 104 ms
+2025-03-06 17:13:40 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@194012a2: 1 ms
+2025-03-06 17:13:40 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@5333f08f: 20 ms
+2025-03-06 17:13:40 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@75bd28d: 6 ms
+2025-03-06 17:13:40 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@cbf1997: 4 ms
+2025-03-06 17:13:40 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@49232c6f: 0 ms
+2025-03-06 17:55:48 DEBUG org.testng.TestNG - suiteXmlPath: "D:\Repos\CKSelenium\Runner.xml"
+2025-03-06 17:55:49 INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Repos\CKSelenium\Runner.xml
+
+2025-03-06 17:55:51 INFO  sauce_Login -  
+
+ <<<<<<<<<<<<<<<<<<<<<<   starting Test  :  sauce_Login  >>>>>>>>>>>>>>>>>>>>>>>
+2025-03-06 17:55:52 INFO  sauce_Login - System is retrieving test data...
+2025-03-06 17:55:54 INFO  sauce_Login - Maximizing the window
+2025-03-06 17:55:55 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:55:55 INFO  sauce_Login - Element :"Username" found within the Time
+2025-03-06 17:55:55 INFO  sauce_Login - Value = "standard_user" is entered successfully in Textfield : "Username"
+2025-03-06 17:55:56 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:55:56 INFO  sauce_Login - Element :"Password" found within the Time
+2025-03-06 17:55:56 INFO  sauce_Login - Value = "secret_sauce" is entered successfully in Textfield : "Password"
+2025-03-06 17:55:58 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:55:58 INFO  sauce_Login - Element :"Login Btn" found within the Time
+2025-03-06 17:55:58 INFO  sauce_Login - System successfully clicked on the element "Login Btn"
+2025-03-06 17:55:59 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:55:59 INFO  sauce_Login - Element :"Products heading" found within the Time
+2025-03-06 17:56:00 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:56:01 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:56:01 INFO  sauce_Login - Element :"Burger Menu" found within the Time
+2025-03-06 17:56:01 INFO  sauce_Login - System successfully clicked on the element "Burger Menu"
+2025-03-06 17:56:02 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:56:02 INFO  sauce_Login - Element :"AllItems" found within the Time
+2025-03-06 17:56:03 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:56:03 INFO  sauce_Login - AllItems is present in the page
+2025-03-06 17:56:04 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:56:04 INFO  sauce_Login - Element :"ShoppingCart" found within the Time
+2025-03-06 17:56:05 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:56:05 INFO  sauce_Login - ShoppingCart is present in the page
+2025-03-06 17:56:06 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:56:06 INFO  sauce_Login - Element :"About" found within the Time
+2025-03-06 17:56:07 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:56:07 INFO  sauce_Login - About is present in the page
+2025-03-06 17:56:09 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:56:09 INFO  sauce_Login - Element :"Logout" found within the Time
+2025-03-06 17:56:10 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:56:10 INFO  sauce_Login - Logout is present in the page
+2025-03-06 17:56:11 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:56:11 INFO  sauce_Login - Element :"ResetAppState" found within the Time
+2025-03-06 17:56:12 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:56:12 INFO  sauce_Login - ResetAppState is present in the page
+2025-03-06 17:56:13 INFO  sauce_Login - Waiting for 1 seconds
+2025-03-06 17:56:13 INFO  sauce_Login - 
+ 
+ xxxxxxxxxxxxxxxx   -   End of Test  -  xxxxxxxxxxxxxxxx 
+ 
+2025-03-06 17:56:15 INFO  sauce_Login -  
+ 
+ =============================$$$$$$$$$$$$$$$$$$$$  -  End of Report  -  $$$$$$$$$$$$$$$$$$$$===================================================
+2025-03-06 17:58:20 DEBUG org.testng.TestNG - suiteXmlPath: "D:\Repos\CKSelenium\Runner.xml"
+2025-03-06 18:09:51 DEBUG org.testng.TestNG - suiteXmlPath: "D:\Repos\CKSelenium\Runner.xml"
+2025-03-06 18:10:39 DEBUG org.testng.TestNG - suiteXmlPath: "D:\Repos\CKSelenium\Runner.xml"
+2025-03-06 18:13:47 DEBUG org.testng.TestNG - suiteXmlPath: "D:\Repos\CKSelenium\Runner.xml"
+2025-03-06 20:23:00 DEBUG org.testng.TestNG - suiteXmlPath: "D:\Repos\CKSelenium\Runner.xml"
+2025-03-06 20:25:41 DEBUG org.testng.TestNG - suiteXmlPath: "D:\Repos\CKSelenium\Runner.xml"
+2025-03-06 20:32:59 DEBUG org.testng.TestNG - suiteXmlPath: "D:\Repos\CKSelenium\Runner.xml"
+2025-03-06 20:33:50 DEBUG org.testng.TestNG - suiteXmlPath: "D:\Repos\CKSelenium\Runner.xml"
+2025-03-06 20:46:28 DEBUG org.testng.TestNG - suiteXmlPath: "D:\Repos\CKSelenium\Runner.xml"

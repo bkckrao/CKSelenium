@@ -1,5 +1,5 @@
 
-package com.CK.Pages;
+package com.CK.Naukri.Pages;
 
 import com.Bachu.Selenium.Framework.Lib.Button;
 import com.Bachu.Selenium.Framework.Lib.Label;

@@ -1,11 +1,11 @@
-package com.CK.Scripts;
+package com.CK.Naukri.Scripts;
 
 import org.testng.annotations.Test;
 
 import com.Bachu.Selenium.Basetest.BaseTest;
 import com.Bachu.Selenium.Framework.Lib.Util;
 import com.Bachu.Selenium.Reporting.Reporting;
-import com.CK.Pages.Naukri_Ids;
+import com.CK.Naukri.Pages.Naukri_Ids;
 
 public class Naukri extends BaseTest{
 	

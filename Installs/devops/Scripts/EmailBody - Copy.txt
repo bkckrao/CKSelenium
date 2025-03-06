@@ -1,0 +1,10 @@
+Hello Dear,
+
+
+         <p>            This Email is the Notification from Jenkins by the project : ${JOB_NAME}. </p>
+         <p>            <b>Job Name 	   </b>    : ${JOB_NAME} </p>
+         <p>            <b>Jenkins URL     </b>    : ${env.BUILD_URL} </p>
+         <p>            <b>Build Number    </b>    : ${env.BUILD_ID} </p>
+         <p>            <b>Build Status    </b>    : ${currentBuild.currentResult} </p>
+		 <p>            <b>Triggered By    </b>    : ${buildCause} </p>
+         <p>            <b>Proj Location   </b>    : ${env.WORKSPACE} </p>

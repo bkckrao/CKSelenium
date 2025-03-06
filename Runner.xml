@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <!-- <suite thread-count="5" name="Suite" parallel="tests"> -->
-<suite thread-count="5" name="Suite" >
+<suite name="ck Suite">
 
 	<!-- <parameter name="browserstack" value="false" /> -->
 	<!-- <parameter name="Localbrowserstack" value="true" /> -->
 	
-	
-	<test name="test1">
+	<test thread-count="5"  name="ck test1">
 		<!-- <parameter name="browsername" value="chrome" /> -->
 
 		 <classes>
-		<class name="com.CK.Scripts.Naukri"/>
+			<class name="com.CK.Sauce.Scripts.SauceLabs"/>
 			
 		</classes>
 	</test>

@@ -1,0 +1,109 @@
+schedules:
+- cron: '0 3 * * *'
+  displayName: Scheduled to run for every day
+  branches:
+    include:
+      - master
+  always: true
+trigger:
+  branches:
+    include:
+    - master
+pool:
+  name: AutomationPool
+  demands:
+  - Agent.Name -equals LAVANDER03
+variables:
+- name: workingdirectory
+  value: $(System.DefaultWorkingDirectory)
+- name: ReportName
+  value: $(Build.Repository.Name).html
+- name: RepoName
+  value: $(Build.Repository.Name)
+- name: ProjectName
+  value: $[replace(variables['RepoName'], '-Repo', ' ')] 
+- name: Jobname
+  value: $(Agent.JobName).html
+- name: reportsPath
+  value: $(workingdirectory)\Reports
+- name: logsPath
+  value: $(workingdirectory)\Logs
+- name: emailbodyPath
+  value: '$(workingdirectory)/Installs/devops/Scripts/EmailBody.txt'
+- name: emailcon
+  value: testing email body in vars
+stages:
+- stage: stg1
+  jobs:
+  - job: Project_Information
+    steps:
+    - task: PowerShell@2
+      displayName: Variables definition and printing.
+      inputs:
+        targetType: inline
+        script: |
+          echo email body path : $(emailbodyPath)
+          echo ===========================================
+          echo reportsPath : $(reportsPath)
+          echo ReportName : $(ReportName)
+          echo ===========================================
+          Set-Variable -Name cont -Value (Get-Content -Path $(emailbodyPath))
+          Write-Host Email content : $cont
+          echo ===========================================
+- stage: stg2
+  jobs:
+  - job: Execution_Job
+    steps:
+#    - task: CmdLine@2
+#      displayName: Printing the job name
+#      inputs:
+#        script: |
+#          echo this job name is $(ProjectName)
+    - task: PowerShell@2
+      displayName: Deletion of Archieved reports.
+      inputs:
+        targetType: inline
+        script: |
+          .\\Installs\\devops\\Scripts\\DeleteFile.ps1 -Path $(reportsPath) -Filename $(ReportName)
+    - task: PowerShell@2
+      displayName: Execution of Maven suite
+      inputs:
+        targetType: inline
+        script: |
+          .\Installs\devops\Scripts\RunMavenSuite.ps1
+    - task: PowerShell@2
+      displayName: copying the latest execution report.
+      inputs:
+        targetType: inline
+        script: |
+          .\Installs\devops\Scripts\CopyFile.ps1 -Source $(reportsPath) -Destination $(ReportName)
+    - task: PowerShell@2
+      displayName: setting the Email body to a variable abc.
+      inputs:
+        targetType: inline
+        script: |
+          Set-Variable -Name abc -Value (Get-Content -Path $(emailbodyPath))
+          echo value is $abc
+    - task: SendEmail@1
+      displayName: Sending Email
+      inputs:
+        To: 'C.kaja@diyarme.com'
+        From: 'Azure@diyarme.com'
+        Subject: '$(ProjectName) Automation Report   Build Number - $(Build.BuildNumber)   Status - $(Agent.JobStatus)'
+        Body: " Hello Dears, \n\n Please find the attached automation report for $(ProjectName) project and the details below: \n ============================================================== \n
+        \n Build Triggered By :  $(Build.Reason)
+        \n Build Status       :  $(Agent.JobStatus)
+        \n Repository Name    : $(Build.Repository.Name)
+        \n Build Number       : $(Build.BuildNumber)   
+        \n Repository URL     : $(Build.Repository.Uri)
+        \n ==============================================================
+
+        \n Please note, This email is triggered by Azure.
+
+        \n\n Regards,
+        \n Azure "
+        AddAttachment: true
+        Attachment: $(reportsPath)\$(ReportName)
+        SmtpServer: '172.24.49.9'
+        SmtpPort: '25'
+        UseSSL: false

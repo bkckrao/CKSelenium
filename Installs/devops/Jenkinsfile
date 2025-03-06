@@ -1,0 +1,233 @@
+/* groovylint-disable-next-line CompileStatic */
+pipeline {
+    agent any
+environment
+    {
+        reportPath = "${env.WORKSPACE}/Reports"
+        filename = "${JOB_NAME}.html"
+        emailbodyPath = "${env.WORKSPACE}/Installs/devops/Scripts/EmailBody.txt"
+        buildCause = "${currentBuild.getBuildCauses()[0].shortDescription}"
+        // emailbody = readFile(file: "${emailbodyPath}")
+    }
+    // This step checks for any changes in the SCM for every 3 minutes and triggers only true.
+    triggers
+    {
+        pollSCM('H/3 * * * *')
+    }
+    /*   This is based on the upstream project
+    triggers { upstream(upstreamProjects: 'job1,job2', threshold: hudson.model.Result.SUCCESS) }
+    */
+    options
+    {
+        // timestamps()
+        // retry(3)
+        timeout(time: 2, unit: 'HOURS')
+        disableConcurrentBuilds()
+    }
+    stages
+    {
+     /*   stage('Testing') {
+            steps {
+                // sh "printenv | sort"
+                echo "Current user : ${env.USER_NAME}"
+                echo "Current user id : ${env.USER_ID} (type: ${env.USER_ID.class}"
+            }
+        } */
+
+        stage('PS1_RemoteSigned')
+        {
+            steps
+            {
+                script
+                {
+                    bat ".\\Installs\\devops\\Scripts\\PS1_RemoteSigned.bat"
+                }
+            }
+        }
+        stage('Info')
+        {
+            steps
+            {
+                script
+                {
+                echo "Running BUILD_ID : ${env.BUILD_ID}   on URL :  ${env.JENKINS_URL}"
+                echo "Job Name : ${JOB_NAME}"
+                echo "workspace = ${env.WORKSPACE}"
+                echo "Triggered By : ${buildCause}"
+                // echo "BUILD_USER_ID : ${BUILD_USER_ID}"       commenting as this is Giving error :(
+                // Initial notification on Build
+            emailext body: "Build just started by : <b> ${buildCause} </b>.",
+            subject: "${env.JOB_NAME} - Build# ${env.BUILD_NUMBER} - Started",
+            to:'bkckrao@gmail.com,c.kaja@diyarme.com,s.madhira@diyarme.com'
+                }
+            }
+        }
+        stage('Test-Suite Execution...')
+        {
+            steps
+            {
+                script
+                {
+                    // bat 'mvn clean install'
+                    testsuite = 'testsuite'
+                    powershell ".\\Installs\\devops\\Scripts\\RunMavenSuite.ps1"
+                }
+            }
+        }
+        stage('Sonarqube')
+        {
+            steps
+            {
+                withSonarQubeEnv('SonarQube')
+                {
+                    script
+                    {
+                        // bat 'mvn sonar:sonar'
+                        Sonar = 'Sonar'
+                        powershell ".\\Installs\\devops\\Scripts\\RunSonarQube.ps1"
+                        sleep(time:2, unit:'MINUTES')
+                    }
+                }
+            }
+        }
+        stage('Quality gate')
+        {
+            steps
+            {
+                // timeout(time: 5, unit: 'MINUTES')
+                waitForQualityGate abortPipeline: true
+            }
+        }
+        stage('CleanUp-Report')
+        {
+            steps
+            {
+                script
+                {
+                    // filename = "${JOB_NAME}"
+                    // fileName = 'Report.html'
+                    // reportPath = "${env.WORKSPACE}/Reports"
+                    echo "echo FileName : ${env.fileName}"
+                    echo "reportPath : ${env.reportPath}"
+                    powershell ".\\Installs\\devops\\Scripts\\DeleteFile.ps1 -Path '${env.reportPath}' -Filename ${env.fileName}"
+                    echo 'DeleteFile is done'
+                }
+            }
+        }
+        stage('Report-Generation')
+        {
+            steps
+            {
+                script
+                {
+                    echo "echo FileName : ${env.fileName}"
+                    echo "reportPath : ${env.reportPath}"
+                    // buildCause = "${currentBuild.getBuildCauses()[0].shortDescription}"
+                    powershell ".\\Installs\\devops\\Scripts\\CopyFile.ps1 -Source '${env.reportPath}' -Destination ${env.fileName}"
+                }
+            }
+        }
+        stage('Email-Trigger')
+        {
+            steps
+            {
+                emailext attachLog: true, attachmentsPattern: "Reports/${env.fileName}",
+         /*   emailext attachLog: true, attachmentsPattern: """
+             <fileset dir="Reports/" casesensitive="yes">
+            <filename name="${env.fileName}"/>
+            </fileset>
+            """  */
+            body: readFile(file: "${emailbodyPath}"),
+            subject: "${env.JOB_NAME} - Build# ${env.BUILD_NUMBER} - ${currentBuild.currentResult}",
+            to:'bkckrao@gmail.com,c.kaja@diyarme.com,s.madhira@diyarme.com,sumanthmadhira5@gmail.com'
+            }
+        }
+        stage('PS1_AllSigned')
+        {
+            steps
+            {
+                script
+                {
+                    bat ".\\Installs\\devops\\Scripts\\PS1_AllSigned.bat"
+                }
+            }
+        }
+    }
+        post {
+        always
+        {
+            sleep(time:5, unit:'SECONDS')
+
+
+        // cleanWs()
+
+            dir("${env.WORKSPACE}@tmp")
+            {
+                deleteDir()
+            }
+            dir("${env.WORKSPACE}@script")
+            {
+                deleteDir()
+            }
+            dir("${env.WORKSPACE}@script@tmp")
+            {
+                deleteDir()
+            }
+        }
+    }
+}
+
+// EOF
+/*        stage('sonarqube') {
+            steps {
+            properties {
+                property 'sonar.host.url', 'http://10.77.77.14:9000/'
+                property 'sonar.projectName', "${ env.JOB_NAME }"   //  this name will appear in dashboard
+                property 'sonar.projectKey', "${ env.JOB_NAME }" // It sould be a keybased on this report is created
+                property 'sonar.groovy.jacoco.reportPath', "${project.buildDir}/jacoco/test.exec"
+            }
+            }
+}
+*/
+
+/*
+stage('Sonarqube') {
+    environment {
+        // def scannerHome = tool 'SonarScanner'
+        def scannerHome = 'C:/Program Files/sonarqube-7.9.5/sonar-scanner-msbuild-5.0.4.24009-net5.0/sonar-scanner-4.4.0.2170/bin'
+    }
+    steps {
+        echo "scannerHome = ${scannerHome}"
+        withSonarQubeEnv('SonarQube') {
+            // withSonarQubeEnv('10.77.77.14:9000') {
+            // sh "${scannerHome}/bin/sonar-scanner"
+            withMaven(maven:'Maven 3.63') {
+                        sh 'mvn clean package sonar:sonar'
+            }
+            }
+         timeout(time: 10, unit: 'MINUTES') {
+             waitForQualityGate abortPipeline: true
+         }
+        }
+    }
+stage("Quality Gate") {
+            steps {
+                timeout(time: 1, unit: 'HOURS') {
+                    // Parameter indicates whether to set pipeline to UNSTABLE if Quality Gate fails
+                    // true = set pipeline to UNSTABLE, false = don't
+                    waitForQualityGate abortPipeline: true
+                }
+            }
+}
+}
+*/
+/*
+publishHTML target: [
+                    allowMissing: false,
+                    alwaysLinkToLastBuild: true,
+                    keepAll: true,
+                    reportDir: 'Reports',
+                    reportFiles: "${env.fileName}",
+                    reportName: "${env.fileName}"
+                ]
+*/
