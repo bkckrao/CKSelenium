@@ -9,6 +9,7 @@ public class SauceHomePage {
 	public static Label ProductsLabel = new Label("//span[@class='title'][contains(text(),'Products')]");
 	public static Button BurgerMenu = new Button("//button[@id='react-burger-menu-btn']");
 	
+	public static Label AppLogo = new Label("//div[@class='app_logo']");
 	public static Link AllItems = new Link("//a[@id='inventory_sidebar_link']");
 	public static Link About = new Link("//a[@id='about_sidebar_link']");
 	public static Link Logout = new Link("//a[@id='logout_sidebar_link']");
@@ -17,6 +18,6 @@ public class SauceHomePage {
 	public static Label Num_of_AddToCart_Btns = new Label("//button[starts-with(@id,'add-to-cart')]");
 	public static Link ShoppingCart = new Link("//a[@class='shopping_cart_link']");
 	public static Label SortingContainer = new Label("//select[@class='product_sort_container']");
-	
+	public static Label FilerNSort = new Label("//span[@class='select_container']");
 	
 }

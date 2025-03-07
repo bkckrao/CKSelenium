@@ -25,17 +25,18 @@ public class SauceLabs extends SauceLibrary{
 		SauceLoginPage.LoginBtn.click("Login Btn");
 		
 		SauceHomePage.ProductsLabel.verifyElementPresent("Products heading");
+		SauceHomePage.AppLogo.verifyElementPresent("AppLogo");
 		SauceHomePage.BurgerMenu.click("Burger Menu");
 		SauceHomePage.AllItems.verifyElementPresent("AllItems");
 		
-		SauceHomePage.ShoppingCart.verifyElementPresent("ShoppingCart");
 		SauceHomePage.About.verifyElementPresent("About");
 		SauceHomePage.Logout.verifyElementPresent("Logout");
 		SauceHomePage.ResetAppState.verifyElementPresent("ResetAppState");
-		
+		SauceHomePage.ShoppingCart.verifyElementPresent("ShoppingCart");
+		SauceHomePage.FilerNSort.verifyElementPresent("Filer and Sorting");
 		
 		sortby("Price (high to low)");
-		System.out.println("Num of Add to Cart buttons : " +lib.getXpathsCount(SauceHomePage.Num_of_AddToCart_Btns.getElement()));
+		Reporting.pass("Num of Add to Cart buttons : " +lib.getXpathsCount(SauceHomePage.Num_of_AddToCart_Btns.getElement()));
         
 	
 	}
